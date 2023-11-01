@@ -54,9 +54,8 @@ build_variant() {
     IMG=void-live-${ARCH}-${DATE}-${variant}.iso
     GRUB_PKGS="grub-i386-efi grub-x86_64-efi"
     A11Y_PKGS="espeakup void-live-audio brltty"
-    MOD_PKGS="git tig links tmux htop vpm base-devel zsh" # apps for void linux commandline
-    MOD_XPKGS=""
-    PKGS="dialog cryptsetup lvm2 mdadm void-docs-browse xtools-minimal xmirror $MOD_PKGS $A11Y_PKGS $GRUB_PKGS"
+    MOD_PKGS_NOX="neovim tig git tmux fish-shell base-devel python3"
+    PKGS="dialog cryptsetup lvm2 mdadm void-docs-browse xtools-minimal xmirror $A11Y_PKGS $GRUB_PKGS"
     XORG_PKGS="xorg-minimal xorg-input-drivers xorg-video-drivers setxkbmap xauth font-misc-misc terminus-font dejavu-fonts-ttf orca"
     SERVICES="sshd"
 
